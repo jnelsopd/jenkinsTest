@@ -3,9 +3,11 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                sh("ls")
-                sh("cd test")
-                sh("source helloWorld.sh")
+                sh '''#!/bin/bash
+                      ls
+                      cd test
+                      source helloWorld.sh 
+                '''
             }
         }
     }
