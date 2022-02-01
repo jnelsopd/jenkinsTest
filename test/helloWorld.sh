@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Hello World Test"
+echo "Hello ${MY_NAME}"
