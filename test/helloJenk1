@@ -4,7 +4,8 @@ pipeline {
         stage('Stage 1') {
             steps {
                 sh("ls")
-                echo 'Hello world 1!' 
+                sh("cd test")
+                sh("source helloWorld.sh")
             }
         }
     }
